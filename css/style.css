@@ -16,21 +16,21 @@ main{
     background-color: blue;
 }
 
-header{
-    flex-basis: 100px;
-    flex-shrink: 0;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    border: 1px dashed black;
-}
-
 /*Utils*/
 
 .cs-container{
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+
+.cs-sidebar{
+    background-color: blueviolet;
+    flex-shrink: 0;
+    flex-basis: 70px;
+}
+
+.cs-dashboard{
+    overflow: auto;
+    flex: 1;
 }
