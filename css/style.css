@@ -27,9 +27,14 @@ main{
 
 .cs-sidebar{
     flex-shrink: 0;
-    flex-basis: 100px;
+    flex-basis: 70px;
     background-image: url('../img/sidebar-bg.png');
     background-color: #0e0b3d;
+}
+
+.cs-sidebar-icon{
+    color: white;
+    font-size: 24px;
 }
 
 /*Dashboard*/
