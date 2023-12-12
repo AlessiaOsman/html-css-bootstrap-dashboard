@@ -22,6 +22,7 @@
 <body>
     <!--Main and footer layout-->
     <div class="cs-container">
+        <!--Header-->
         <header>
             <nav class="navbar sticky-top bg-body-tertiary">
                 <div class="container-fluid">
@@ -37,6 +38,7 @@
             </nav>
         </header>
         <main>
+            <!--Sidebar-->
             <div class="cs-sidebar px-3 py-5 d-flex flex-column justify-content-between">
                 <ul class="list-unstyled d-flex flex-column align-items-center align-items-lg-start gap-3">
                     <li>
@@ -64,8 +66,32 @@
                 </a>
 
             </div>
+            <!--Dashboard-->
             <div class="cs-dashboard">
+                <div class="cs-dashboard-header bg-primary text-white">
+                    <div class="row container-fluid flex-column flex-md-row align-items-md-start justify-content-lg-between py-5">
+                        <div class="col d-flex align-items-center gap-2 mb-3 order-md-1 justify-content-lg-end">
+                            <h4>Nuovo Studente</h4>
+                            <button type="button" class="btn btn-outline-light border border-3 fw-bold">+</button>
+                        </div>
+                        <div class="col mb-3">
+                            <h3>Boolean <span class="badge rounded-pill cs-bg-blue">Primary</span></h3>
+                            <div class="d-flex align-items-center gap-2 mb-3">
+                                <span class="badge rounded-pill cs-bg-blue">3 App</span>
+                                <i class="fa-solid fa-angles-right"></i>
+                                <span class="badge rounded-pill cs-bg-blue d-lg-none">+</span>
+                                <span class="badge rounded-pill cs-bg-blue d-none d-lg-inline-block">Booelan Mobile App</span>
+                                <span class="badge rounded-pill cs-bg-blue d-none d-lg-inline-block">Booelan Web App</span>
+                                <span class="badge rounded-pill cs-bg-blue d-none d-lg-inline-block">Booelan blog App</span>
 
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6>Studenti online negli ultimi 30 minuti</h6>
+                            <h2>125</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 

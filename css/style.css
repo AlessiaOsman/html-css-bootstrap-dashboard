@@ -23,6 +23,10 @@ main{
     height: 100vh;
 }
 
+.cs-bg-blue{
+    background-color: #242492;
+}
+
 /*Sidebar*/
 
 .cs-sidebar{
