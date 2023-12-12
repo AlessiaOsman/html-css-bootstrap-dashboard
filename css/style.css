@@ -1,0 +1,36 @@
+/*Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Generics*/
+
+main{
+    flex-grow: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+}
+
+header{
+    flex-basis: 100px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    border: 1px dashed black;
+}
+
+/*Utils*/
+
+.cs-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
