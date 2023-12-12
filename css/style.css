@@ -13,7 +13,6 @@ main{
     overflow: auto;
     display: flex;
     flex-direction: row;
-    background-color: blue;
 }
 
 /*Utils*/
@@ -24,13 +23,31 @@ main{
     height: 100vh;
 }
 
+/*Sidebar*/
+
 .cs-sidebar{
-    background-color: blueviolet;
     flex-shrink: 0;
-    flex-basis: 70px;
+    flex-basis: 100px;
+    background-image: url('../img/sidebar-bg.png');
+    background-color: #0e0b3d;
 }
+
+/*Dashboard*/
 
 .cs-dashboard{
     overflow: auto;
     flex: 1;
+}
+
+/*Header*/
+
+.cs-logo-image{
+    width: 50px;
+}
+
+@media screen and (min-width: 992px) {
+    .cs-logo-image{
+        width: 100%;
+        height: auto;
+    }
 }
