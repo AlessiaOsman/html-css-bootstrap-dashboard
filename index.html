@@ -86,7 +86,72 @@
                         class="row container-fluid flex-column flex-md-row align-items-md-start justify-content-lg-between py-5">
                         <div class="col d-flex align-items-center gap-2 mb-3 order-md-1 justify-content-lg-end">
                             <h4>Nuovo Studente</h4>
-                            <button type="button" class="btn btn-outline-light border border-3 fw-bold">+</button>
+                            <button type="button" class="btn btn-outline-light border border-3 fw-bold" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                            <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <form class="row g-3">
+                                        <div class="col-md-6">
+                                          <label for="name" class="form-label">Nome</label>
+                                          <input type="text" class="form-control" id="name">
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label for="lastName" class="form-label">Cognome</label>
+                                          <input type="text" class="form-control" id="lastName">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="email">
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="password">
+                                          </div>
+                                        <div class="col-12">
+                                          <label for="inputAddress" class="form-label">Address</label>
+                                          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                        </div>
+                                        <div class="col-md-6">
+                                          <label for="inputCity" class="form-label">City</label>
+                                          <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div class="col-md-4">
+                                          <label for="inputState" class="form-label">State</label>
+                                          <select id="inputState" class="form-select">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                          </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                          <label for="inputZip" class="form-label">Zip</label>
+                                          <input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="formFile" class="form-label">Foto</label>
+                                            <input class="form-control" type="file" id="formFile">
+                                          </div>
+                                        <div class="col-12">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                              Seleziona Per Proseguire
+                                            </label>
+                                          </div>
+                                        </div>
+                                        <div class="col-12">
+                                          <button type="submit" class="btn btn-primary me-2">Salva</button>
+                                          <input class="btn btn-warning" type="reset" value="Reset">
+                                        </div>
+                                      </form>
+                                </div>
+                            </div>
                         </div>
                         <div class="col mb-3">
                             <h3>Boolean <span class="badge rounded-pill cs-bg-blue">Primary</span></h3>
@@ -375,18 +440,18 @@
                             <div class="card">
                                 <img src="img/stats.jpeg" class="card-img-top" alt="stats">
                                 <div class="card-body">
-                                  <h5 class="card-title">Utenti attivi</h5>
-                                  <p class="card-text">Lista degli itenti attivi in piattaforma nell'ultimo mese</p>
+                                    <h5 class="card-title">Utenti attivi</h5>
+                                    <p class="card-text">Lista degli itenti attivi in piattaforma nell'ultimo mese</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">Gennaio: 1200</li>
-                                  <li class="list-group-item">Febbraio: 800</li>
-                                  <li class="list-group-item">Marzo: 1500</li>
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
                                 </ul>
                                 <div class="card-body">
-                                  <a href="#" class="card-link">Visualizza Resport Approfindito</a>
+                                    <a href="#" class="card-link">Visualizza Resport Approfindito</a>
                                 </div>
-                              </div>
+                            </div>
                         </div>
                     </div>
 

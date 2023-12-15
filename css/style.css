@@ -63,6 +63,14 @@ main{
     flex: 1;
 }
 
+@media screen and (min-width: 992px) {
+    .cs-dashboard .cs-dashboard-header .offcanvas.offcanvas-end{
+        max-width: 70%;
+    } 
+}
+
+
+
 .card-body img{
     height: 30px;
     width: 30px;
