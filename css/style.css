@@ -63,7 +63,16 @@ main{
     flex: 1;
 }
 
+.card-body img{
+    height: 30px;
+    width: 30px;
+}
 
+.card-body i{
+    border: 1px solid;
+    border-radius: 2px;
+    padding: 8px;
+}
 /*Header*/
 
 .cs-logo-image{
