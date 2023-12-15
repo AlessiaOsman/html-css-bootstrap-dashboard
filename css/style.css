@@ -1,5 +1,5 @@
 /*Reset*/
-
+/*Il reset non serve*/
 *{
     margin: 0;
     padding: 0;
@@ -52,6 +52,10 @@ main{
     color: white;
 }
 
+.search-icon{
+    padding: 8px;
+}
+
 /*Dashboard*/
 
 .cs-dashboard{
@@ -59,10 +63,15 @@ main{
     flex: 1;
 }
 
+
 /*Header*/
 
 .cs-logo-image{
     width: 50px;
+}
+
+.navbar .btn-group button::before{
+    display: none;
 }
 
 @media screen and (min-width: 992px) {

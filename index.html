@@ -27,13 +27,21 @@
             <nav class="navbar sticky-top bg-body-tertiary">
                 <div class="container-fluid">
                     <a href="#"><img class="cs-logo-image d-lg-none" src="img/mobile-logo.png" alt="logo"></a>
-                    <a href="#"><img class="cs-logo-image d-none d-lg-inline-block" src="img/logo.svg" alt="logo grande"></a>
-                    
+                    <a href="#"><img class="cs-logo-image d-none d-lg-inline-block" src="img/logo.svg"
+                            alt="logo grande"></a>
+
                     <form class="d-flex col-8" role="search">
-                        <input class="form-control me-2 bg-body-secondary text-body" type="search" placeholder="Prova a cercare: lezioni di Laravel"
-                            aria-label="Search">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text p-0 border-end-0 bg-body-secondary" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass search-icon"></i></span>
+                            <input type="text" class="form-control border-start-0 bg-body-secondary" placeholder="Prova a cercare: lezioni di Laravel" aria-label="Search" aria-describedby="addon-wrapping">
+                          </div>
                     </form>
-                    <i class="fa-solid fa-bell text-warning"></i>
+                    <div class="d-flex gap-3">
+                        <i class="fa-solid fa-list-ul d-none d-lg-inline"></i>
+                        <i class="fa-solid fa-circle-question d-none d-lg-inline"></i>
+                        <i class="fa-solid fa-ellipsis-vertical d-none d-lg-inline"></i>
+                        <i class="fa-solid fa-bell text-warning"></i>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -44,7 +52,7 @@
                     <li>
                         <a class="d-flex gap-2" href="#">
                             <i class="fa-solid fa-house cs-sidebar-icon"></i>
-                            <p class="d-none d-lg-inline-block">Home</p>
+                            <p class="d-none d-lg-inline-block">Home</p> <!--Questo può essere uno span-->
                         </a>
                     </li>
                     <li>
@@ -68,8 +76,10 @@
             </div>
             <!--Dashboard-->
             <div class="cs-dashboard">
+                <!--Dashboard Header-->
                 <div class="cs-dashboard-header bg-primary text-white">
-                    <div class="row container-fluid flex-column flex-md-row align-items-md-start justify-content-lg-between py-5">
+                    <div
+                        class="row container-fluid flex-column flex-md-row align-items-md-start justify-content-lg-between py-5">
                         <div class="col d-flex align-items-center gap-2 mb-3 order-md-1 justify-content-lg-end">
                             <h4>Nuovo Studente</h4>
                             <button type="button" class="btn btn-outline-light border border-3 fw-bold">+</button>
@@ -80,9 +90,12 @@
                                 <span class="badge rounded-pill cs-bg-blue">3 App</span>
                                 <i class="fa-solid fa-angles-right"></i>
                                 <span class="badge rounded-pill cs-bg-blue d-lg-none">+</span>
-                                <span class="badge rounded-pill cs-bg-blue d-none d-lg-inline-block">Booelan Mobile App</span>
-                                <span class="badge rounded-pill cs-bg-blue d-none d-lg-inline-block">Booelan Web App</span>
-                                <span class="badge rounded-pill cs-bg-blue d-none d-lg-inline-block">Booelan blog App</span>
+                                <span class="badge rounded-pill cs-bg-blue d-none d-lg-inline-block">Booelan Mobile
+                                    App</span>
+                                <span class="badge rounded-pill cs-bg-blue d-none d-lg-inline-block">Booelan Web
+                                    App</span>
+                                <span class="badge rounded-pill cs-bg-blue d-none d-lg-inline-block">Booelan blog
+                                    App</span>
 
                             </div>
                         </div>
@@ -91,6 +104,51 @@
                             <h2>125</h2>
                         </div>
                     </div>
+                </div>
+                <!--Dashboard Content-->
+                <div class="cs-dashboard-content container-fluid bg-light py-4">
+                    <div class="row">
+                        <div class="col col-12 col-md-8">
+                            <div class="card mb-3">
+                                <div class="card-header">
+                                    <h2>Prossime classi</h2>
+                                </div>
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Stato</th>
+                                                <th scope="col">Azioni</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+
+                                                </td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-12 col-md-8">
+                            <div class="card mb-3"></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </main>
